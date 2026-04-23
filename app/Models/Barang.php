@@ -47,6 +47,7 @@ class Barang extends Model
     {
         return $this->hasMany(PenjualanBarang::class, 'barang_id');
     }
+
     public function pembelianBarangs()
     {
         return $this->hasMany(PembelianBarang::class, 'barang_id');
@@ -56,4 +57,5 @@ class Barang extends Model
     {
         return $this->hasMany(PenjualanBarang::class, 'barang_id');
     }
+
 }
