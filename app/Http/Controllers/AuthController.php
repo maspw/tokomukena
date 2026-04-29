@@ -24,7 +24,7 @@ class AuthController extends Controller
         ]);
 
         // buka untuk keperluan manajemen user
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'users_group' => 'customer'])) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'user_group' => 'customer'])) {
             $request->session()->regenerate();
             return redirect()->intended('/depan');
             // return redirect()->intended('/perusahaan');
