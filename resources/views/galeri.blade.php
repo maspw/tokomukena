@@ -230,6 +230,9 @@
             
           </div>
         </div>
+        {{-- /tab-content --}}
+        </div>
+        {{-- /bootstrap-tabs --}}
 
       </div>
     </div>
